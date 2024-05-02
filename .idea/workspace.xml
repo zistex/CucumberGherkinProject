@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1cda0b4-fefd-4180-b664-863dcca31221" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/CucumberAddNewCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/CucumberAddNewCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/CucumberDeleteAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/CucumberDeleteAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/CucumberLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/CucumberLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/RunCukesTestBDD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/RunCukesTestBDD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DeleteAccountTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DeleteAccountTest.feature" afterDir="false" />
-    </list>
+    <list default="true" id="b1cda0b4-fefd-4180-b664-863dcca31221" name="Changes" comment="Update the names of the methods." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,9 +195,20 @@
       <option name="presentableId" value="Default" />
       <updated>1714670289967</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update the names of the methods.">
+      <option name="closed" value="true" />
+      <created>1714682798704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714682798704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update the names of the methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the names of the methods." />
   </component>
 </project>
