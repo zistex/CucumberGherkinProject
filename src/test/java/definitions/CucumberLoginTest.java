@@ -2,6 +2,7 @@ package definitions;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,15 +14,8 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class testsDefinitionsSteps {
-    static WebDriver driver;
-
-
-    private static final By USERNAME_INPUT_FIELD = By.id("input-username");
-    private static final By PASSWORD_INPUT_FIELD = By.id("input-password");
-    private static final By LOGIN_BUTTON = By.cssSelector(".btn-primary");
-    private static final By USERNAME_LABEL = By.xpath("//*[@id='user-profile']/ ..");
-
+public class CucumberLoginTest {
+    WebDriver driver;
     @Before
     public void setup() {
         driver = new ChromeDriver();
@@ -34,16 +28,23 @@ public class testsDefinitionsSteps {
         driver.quit();
     }
 
-    @Given("The user is on the correct web page")
+    @Given("The user is at the correct web page")
     public void theUserIsOnTheCorrectWebPage() {
         driver.get("https://shop.pragmatic.bg/admin");
     }
 
-    @When("He enters the admin username and password")
+    @When("He enters the admin username")
     public void heEntersTheAdminUsernameAndPassword() {
          driver.findElement(By.id("input-username")).sendKeys("admin");
-         driver.findElement(By.id("input-password")).sendKeys("parola123!");
-         driver.findElement(By.cssSelector(".btn-primary")).click();
+    }
+    @And("He enters the admin password")
+    public void HeEntersTheAdminPassword (){
+        driver.findElement(By.id("input-password")).sendKeys("parola123!");
+    }
+
+    @And("He clicks on the login button")
+    public void HeClicksOnTheLoginButton() {
+        driver.findElement(By.cssSelector(".btn-primary")).click();
     }
 
     @Then("He makes the assertion")
